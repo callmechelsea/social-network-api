@@ -1,4 +1,12 @@
+const router = require('express').Router();
+const { Types } = require('mongoose');
+const { User, Thought } = require('../../models');
+
 // GET all users
+router.get('/', async (req, res) => {
+    const allUsers = await User.find()
+    res.status
+});
 
 // GET a single user by its _id and populated thought and friend data
 
